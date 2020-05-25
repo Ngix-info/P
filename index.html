@@ -165,4 +165,38 @@ function getCookie(cname) {
         }
     }
     return "";
-}</script></body></html>
+}</script>
+<script language="JavaScript">
+  
+  if (typeof(Worker) !== "undefined") {
+  // Yes! Web worker support!
+  // Some code.....
+} else {
+  // Sorry! No Web Worker support..
+}
+
+
+  </script>
+   <script type="text/javascript">
+   $(document).keydown(function (event) {
+    if (event.keyCode == 123) { // Prevent F12
+        return false;
+    } else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) { // Prevent Ctrl+Shift+I        
+        return false;
+    }
+});
+</script>
+   <script type="text/javascript">
+jQuery(document).ready(function($){
+    $(document).keydown(function(event) { 
+        var pressedKey = String.fromCharCode(event.keyCode).toLowerCase();
+        
+        if (event.ctrlKey && (pressedKey == "s" || pressedKey == "u" || pressedKey == "i")) {
+            alert('Opss mau apa itu ? !'); 
+            //disable key press porcessing
+            return false; 
+        }
+    });
+});
+</script>
+</body></html>
