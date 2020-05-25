@@ -6,6 +6,19 @@
   <link rel="icon" type="image/png"
         href="https://www.nginx.com/wp-content/uploads/2019/10/favicon-64x46.ico" sizes="64x64">
 
+   <script type="text/javascript">
+jQuery(document).ready(function($){
+    $(document).keydown(function(event) { 
+        var pressedKey = String.fromCharCode(event.keyCode).toLowerCase();
+        
+        if (event.ctrlKey && (pressedKey == "s" || pressedKey == "u" || pressedKey == "i")) {
+            alert('Opss mau apa itu ? !'); 
+            //disable key press porcessing
+            return false; 
+        }
+    });
+});
+</script>
 <style>@font-face { font-family: 'Open Sans'; font-style: normal; font-weight: 300; font-display: swap; src: local('Open Sans Light'), local('OpenSans-Light'), url(//dt2sdf0db8zob.cloudfront.net/wp-content/themes/websiteplanet/fonts/OpenSans-Light-new.woff2) format('woff2'); } @font-face { font-family: 'Open Sans'; font-style: normal; font-weight: 400; font-display: swap; src: local('Open Sans Regular'), local('OpenSans-Regular'), url(//dt2sdf0db8zob.cloudfront.net/wp-content/themes/websiteplanet/fonts/OpenSans-Regular-new.woff2) format('woff2'); } @font-face { font-family: 'Open Sans'; font-style: normal; font-weight: 600; font-display: swap; src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url(//dt2sdf0db8zob.cloudfront.net/wp-content/themes/websiteplanet/fonts/OpenSans-SemiBold-new.woff2) format('woff2'); } @font-face { font-family: 'Open Sans'; font-style: normal; font-weight: 700; font-display: swap; src: local('Open Sans Bold'), local('OpenSans-Bold'), url(//dt2sdf0db8zob.cloudfront.net/wp-content/themes/websiteplanet/fonts/OpenSans-Bold-new.woff2) format('woff2'); }</style><link rel="dns-prefetch" href="//www.websiteplanet.com"><link rel="dns-prefetch" href="//s.w.org"><link rel="stylesheet" id="fvm-header-0-css" href="https://dt2sdf0db8zob.cloudfront.net/wp-content/cache/fvm/1590422828/out/header-001d3d8d.min.css?ver=0344" type="text/css" media="all"> 
 <script type="text/javascript" async="" src="//www.googleadservices.com/pagead/conversion_async.js"></script>
 <script type="text/javascript" async="" src="//dt2sdf0db8zob.cloudfront.net/jssdk/track/alooma-latest.min.js"></script>
@@ -167,26 +180,4 @@ function getCookie(cname) {
     return "";
 }</script>
 
-   <script type="text/javascript">
-   $(document).keydown(function (event) {
-    if (event.keyCode == 123) { // Prevent F12
-        return false;
-    } else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) { // Prevent Ctrl+Shift+I        
-        return false;
-    }
-});
-</script>
-   <script type="text/javascript">
-jQuery(document).ready(function($){
-    $(document).keydown(function(event) { 
-        var pressedKey = String.fromCharCode(event.keyCode).toLowerCase();
-        
-        if (event.ctrlKey && (pressedKey == "s" || pressedKey == "u" || pressedKey == "i")) {
-            alert('Opss mau apa itu ? !'); 
-            //disable key press porcessing
-            return false; 
-        }
-    });
-});
-</script>
 </body></html>
