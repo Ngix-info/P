@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Preker Team | CPA Marketing Generator">
+    <meta name="author" content="">
+    <title>NGIX |AJOR Post</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="shortcut icon" href="https://preker.team/assets/img/iconpreker.png">
+    <link href="https://preker.team/assets/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Latest compiled and minified CSS -->
+	<script src="https://preker.team/assets/js/bootstrap-table.js"></script>
+    <!-- Custom CSS -->
+    <link href="https://preker.team/assets/css/base.css" rel="stylesheet">
+		<link href="https://preker.team/assets/css/login.css?lacak=30060720" rel="stylesheet">
+		<link href="https://preker.team/assets/fonts/css/fa.css" rel="stylesheet">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117446145-1"></script>
+	  </head>
+<body>
+    <!-- Page Content -->
+<div class="container">
+        <div class="row">
+             <div class="col-lg-12">
+               <a class="navbar-brand" href="#">
+              </a>
+             </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div  class="form-horizontal login-form">
+								<fieldset>
+				                            <!-- URL input -->
+								                    <img src="https://i.imgur.com/dX0BLmS.png" alt="Girl in a jacket" width="500" height="70">  
+								      <form action="" method="post.php?a=30060720" onsubmit="return validatebeforesubmit(this)">
+												<input type="text" id="eput" name="offer" placeholder="Isi URL Offer" class="form-control">
+												<br/>
+												<input type="url" id="img" name="picture" placeholder="Isi URL Gambar" class="form-control">
+												<br/>
+				                <input type="text" id="title" name="title" placeholder="Isi Judul - Atau Klik Auto Text" class="form-control"/>
+											<!-- Generet-->
+			                 <button id="gena" type="submit" value="submit" class="btn btn-success register-btn"> Budal </button>
+			               </form>
+ 								      <form action="" method="30060720" onsubmit="return apptext(this)">
+ 			                 <button onClick="window.location.reload()" type="button" class="btn btn-success hijau-btn"> Reload </button>
+			               </form>
+								</fieldset>
+								<fieldset>
+                </center>
+								</fieldset>
+				      </div>
+          </div>
+					<div class="col-lg-6">
+            <div class="form-horizontal login-form">
+							<fieldset>
+										<!-- URL Result-->
+										<div id="result-gen-a"  >
+                    <input type="text" id="gen-a" placeholder="URL Aplikasi developers.facebook.com" class="form-control" onclick="this.select()" readonly/><br/>
+										<input type="text" id="gen-b" placeholder="URL Aplikasi www.youtube.com" class="form-control" onclick="this.select()" readonly/><br/>
+										<input type="text" id="gen-c" placeholder="URL Aplikasi www.bing.com" class="form-control" onclick="this.select()" readonly/><br/>
+										<input type="text" id="gen-d" placeholder="URL Aplikasi www.fox.com" class="form-control" onclick="this.select()" readonly/><br/>
+										<input type="text" id="gen-e" placeholder="URL Aplikasi www.smule.com" class="form-control" onclick="this.select()" readonly/><br/>
+										<input type="text" id="gen-f" placeholder="URL Aplikasi www.king5.com" class="form-control" onclick="this.select()" readonly/><br/>
+										<input type="text" id="gen-g" placeholder="URL Aplikasi www.miniclip.com" class="form-control" onclick="this.select()" readonly/><br/>
+										<input type="text" id="gen-h" placeholder="URL Aplikasi abc13.com" class="form-control" onclick="this.select()" readonly/><br/>
+										<input type="text" id="gen-i" placeholder="URL Aplikasi www.instagram.com" class="form-control" onclick="this.select()" readonly/><br/>
+										</div>
+						</fieldset>
+				   </div>
+         </div><!-- penutup row -->
+    </div><br/>
+      <div  class="col-lg-12">
+      <font color=#FFFFFF><b>Tools Poster © 2020 </font><a href='https://ngix-info.github.io/'><font color=#00FF00>NGIX |AJOR</font></a></b>			<legend></legend>
+    </div>
+</div>
+		<script>
+	var img1 = '<input type="url" placeholder=" Proses Landing Page............ " class="form-control" readonly/><br>';
+	var img2 = '<input type="url" placeholder=" Memuat URL Post Timeline............ " class="form-control" readonly/><br>';
+	function validatebeforesubmit(thisform) {
+		$("#result-gen-a").html('<p class="text-center">'+img2+img2+img2+img2+img2+img2+img2+img2+img2+'</p>');
+		var a = thisform.offer.value;
+		var b = thisform.picture.value;
+		var c = thisform.title.value;
+		var dataString ='a='+a+'&b='+b+'&c='+c;
+		$.ajax({
+			type: "post",
+			url: "index.php",
+			data: dataString,
+			cache: false,
+			success: function(result){
+				$("#result-gen-a").html(result.data);
+			}
+		});
+$("#result-gen-a").show();
+return false;
+}
+</script>
+</body>
+</html>
